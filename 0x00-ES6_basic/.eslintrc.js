@@ -18,6 +18,11 @@ module.exports = {
     "no-console": "off",
     "no-shadow": "off",
     "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      { js: "never", jsx: "never", mjs: "never" },
+    ],
   },
   overrides: [
     {
