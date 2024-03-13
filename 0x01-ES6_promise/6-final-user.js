@@ -9,7 +9,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
     const results = Promise.allSettled([signUpPromise, uploadPhotoPromise]);
 
     resolve(
-      results.map((result) => ({ status: result.status, value: result.value })),
+      results.map((result) => ({ status: result.status, value: result.value || result.reason})),
     );
   }).catch(() => Error());
 }
