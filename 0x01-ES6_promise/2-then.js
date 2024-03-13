@@ -1,3 +1,6 @@
-function handelResponseFromAPI(promise) {
-    promise.then((successMessage) => {return({status: 200, body: success});}).catch((error) => {return({});}).then((error) => { console.log("Got a response from the API"); });
+export default function handelResponseFromAPI(promise) {
+  return promise
+    .then(() => ({ status: 200, body: 'success' }))
+    .catch(() => (new Error()))
+    .finally(() => { console.log('Got a response from the API'); });
 }
