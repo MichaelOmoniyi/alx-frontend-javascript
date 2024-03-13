@@ -5,4 +5,8 @@ export default function createIteratorObject(report) {
   }
 
   return result;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 39dbd4bf1dddd285699a2436244f0c17fd537499
