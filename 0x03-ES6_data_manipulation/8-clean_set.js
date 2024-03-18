@@ -10,5 +10,5 @@ export default function cleanSet(set, startString) {
       newString += `${elem.slice(startString.length)}-`;
     }
   });
-  return newString;
+  return newString.slice(0, newString.length - 1);
 }
